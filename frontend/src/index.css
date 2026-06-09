@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0f1a;
+  color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2235;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3050;
+}
+
+/* Prose overrides for dark bg */
+.prose-invert p { color: #cbd5e1; }
+.prose-invert h1, .prose-invert h2, .prose-invert h3 { color: #f1f5f9; }
+.prose-invert ul { color: #cbd5e1; }
+.prose-invert li::marker { color: #475569; }
+.prose-invert strong { color: #f1f5f9; }
+.prose-invert code { color: #a78bfa; background: rgba(167, 139, 250, 0.1); padding: 1px 4px; border-radius: 4px; }
+
+/* Select arrow */
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+/* Bounce animation for loading dots */
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-6px); }
+}
+.animate-bounce {
+  animation: bounce 1.2s infinite ease-in-out;
+}
