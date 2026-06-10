@@ -1,0 +1,1 @@
+# Stock Research Copilot Backend
