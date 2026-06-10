@@ -1,7 +1,6 @@
 import os
 import pickle
 from typing import List, Dict, Tuple, Optional
-
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
