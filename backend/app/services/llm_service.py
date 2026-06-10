@@ -1,7 +1,6 @@
 from typing import List, Dict, Optional, Any
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from app.core.config import get_settings
-
 settings = get_settings()
 
 
