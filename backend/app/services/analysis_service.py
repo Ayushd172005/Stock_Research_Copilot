@@ -1,6 +1,5 @@
 import json
 from typing import List, Dict, Optional, Any
-
 from app.services.vector_store import vector_store
 from app.services.llm_service import llm_service, build_extraction_prompt
 from app.services.pdf_service import pdf_processor
