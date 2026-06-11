@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from typing import List, Optional
 
 from app.models.schemas import FinancialRatios, EarningsSummary, ComparisonResult, ComparisonRequest
-from app.services.analysis_service import analysis_service
+from app.services.analysis_service import analysis_service 
 
 router = APIRouter()
 
