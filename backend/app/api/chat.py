@@ -8,7 +8,6 @@ from app.services.pdf_service import pdf_processor
 
 router = APIRouter()
 
-
 @router.post("/query", response_model=ChatResponse)
 async def query_documents(request: ChatRequest):
     """Query documents using RAG pipeline."""
